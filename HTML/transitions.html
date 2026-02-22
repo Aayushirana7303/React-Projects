@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions And Object fit Properties</title>
+</head>
+<style>
+    .container{
+        background-color: rgb(244, 193, 128);
+        height: 460px;
+        width: 490px;
+        border: 2px solid black;
+        /* width: 60vw;
+        height: 55vh; */
+        background-clip: border-box;
+    }
+    img
+    {
+        height: 460px;
+        width: 480px;
+        /* object-fit: fill; this is a default value */
+        /* object-fit: scale-down;
+        object-fit: none; */
+         object-fit: cover;
+        /* object-position: top left; */ 
+        /* object-fit: contain; */
+    }
+    /* .box{
+        /* background-color: rgb(61, 205, 157);
+        width: 8vw;
+        height: 6vh;
+        transition-property: rotate;
+        /* transition-property: all; */
+        /* transition-duration: 3s;
+        transition-timing-function: ease-in-out;   */
+         /* ease, ease-in,ease-out */
+         /* transition-delay: 1.5s;
+
+    } */
+    /* /* .translate{
+        transform: rotateX(10vw) rotateY(10vh);
+        background-color: rgb(97, 34, 34);
+    } */
+</style>
+<body>
+    <div class="container">
+<img src="over.jpg" alt="my site">
+        </div>
+    </div>
+</body>
+</html>
