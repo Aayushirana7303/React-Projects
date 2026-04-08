@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing ball animation</title>
+    <style>
+        .container {
+            height: 800px;
+            width: 100%;
+            background-color: darkcyan;
+            position: relative;
+            /* background-image: url(https://c8.alamy.com/comp/2RF3W3M/continuous-single-line-drawing-of-basketball-player-shooting-ball-at-hoop-line-art-vector-illustration-2RF3W3M.jpg); */
+            background-size: contain;
+            background-blend-mode: multiply;
+        }
+
+        .ball {
+            /* image: url(https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png); */
+            height: 60px;
+            width: 55px;
+            position: absolute;
+            background-color: palevioletred;
+            bottom: 0;
+            left: 0;
+            border: 10px;
+            border-style: double;
+            border-color: black;
+            border-radius: 59px;
+            animation: animateX 5s linear infinite alternate, animateY 1s ease-out infinite alternate;
+        }
+        img{
+            height: 200px;
+            width: 300px;
+            position:absolute;
+            top: 20;
+            right: 0;
+            overflow-y:visible;
+        }
+         @keyframes animateX {
+            from{
+                  left: 0;
+            }
+            to{
+                 left: 100%;
+            }
+         }
+         @keyframes animateY{
+            from{
+                  bottom:0;
+            }
+            to{
+                bottom: 100%;
+            }
+         }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://t4.ftcdn.net/jpg/02/48/97/09/360_F_248970904_HhOMp3ixBFCYdZ4xzSNcagGR0SrrqQ6x.jpg" alt="basketball">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
